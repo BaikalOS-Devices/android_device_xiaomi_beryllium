@@ -299,4 +299,5 @@
     <!-- Whether auto face unlock is enabled by default -->
     <bool name="config_autoFaceUnlockEnabledByDefault">true</bool>
 
+    <dimen name="rounded_corner_radius_top">104px</dimen>
 </resources>

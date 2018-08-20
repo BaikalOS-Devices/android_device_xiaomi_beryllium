@@ -12,6 +12,4 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 LOCAL_PACKAGE_NAME := NoCutoutOverlay
 LOCAL_SDK_VERSION := current
 
-LOCAL_OVERRIDES_PACKAGES := DisplayCutoutEmulationCornerOverlay DisplayCutoutEmulationDoubleOverlay DisplayCutoutEmulationNarrowOverlay DisplayCutoutEmulationTallOverlay DisplayCutoutEmulationWideOverlay
-
-include $(BUILD_RRO_SYSTEM_PACKAGE)
+include $(BUILD_RRO_PACKAGE)
