@@ -35,6 +35,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Properties
 -include $(LOCAL_PATH)/device-props.mk
 
