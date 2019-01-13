@@ -4,7 +4,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.multicam.fpsmatch=TRUE \
     persist.vendor.camera.multicam.hwsync=TRUE \
     persist.vendor.camera.multicam.framesync=1 \
-    persist.vendor.camera.perfcapture=1
+    persist.vendor.camera.perfcapture=1 \
+
+# Reverse Hall Sensor state
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    vendor.sw_lid.reverse
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
