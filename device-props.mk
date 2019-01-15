@@ -1,6 +1,5 @@
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-<<<<<<< HEAD
     persist.vendor.camera.enableAdvanceFeatures=0x47 \
     persist.vendor.camera.multicam.fpsmatch=TRUE \
     persist.vendor.camera.multicam.hwsync=TRUE \
