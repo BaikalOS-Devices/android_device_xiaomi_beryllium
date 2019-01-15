@@ -21,8 +21,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Properties
 -include $(LOCAL_PATH)/device-props.mk
@@ -45,4 +44,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/device_features/beryllium.xml:system/etc/device_features/beryllium.xml \
+    $(LOCAL_PATH)/configs/device_features/beryllium.xml:system/etc/device_features/beryllium.xml
+
