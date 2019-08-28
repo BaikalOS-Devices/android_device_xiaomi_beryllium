@@ -13,15 +13,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/beryllium/beryllium-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2246
 TARGET_SCREEN_WIDTH := 1080
 
-# Device init scripts
-PRODUCT_PACKAGES += \
-    init.target.rc
-
-# Display
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/qdcm_calib_data_ebbg_fhd_video_dsi_panel.xml:system/etc/qdcm_calib_data_ebbg_fhd_video_dsi_panel.xml \
-    $(LOCAL_PATH)/configs/qdcm_calib_data_tianma_fhd_video_dsi_panel.xml:system/etc/qdcm_calib_data_tianma_fhd_video_dsi_panel.xml
-
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -30,10 +21,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+    $(LOCAL_PATH)/overlay \
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
@@ -48,8 +36,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from sdm845-common
 $(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
 
-<<<<<<< HEAD
-=======
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
@@ -64,7 +50,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
->>>>>>> 178264a... beryllium: Import stock audio configs
+# Device init scripts
+PRODUCT_PACKAGES += \
+    init.target.rc
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
@@ -75,6 +64,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/device_features/beryllium.xml:system/etc/device_features/beryllium.xml
-
+# PocketMode
+PRODUCT_PACKAGES += \
+    XiaomiPocketMode
