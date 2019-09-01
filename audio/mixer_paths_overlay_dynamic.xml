@@ -11,16 +11,16 @@
 <mixer>
         <ctl name="COMP1 Switch" value="0" />
         <ctl name="COMP2 Switch" value="0" />
-        <ctl name="HPHL Volume" value="17" />
-        <ctl name="HPHR Volume" value="17" />
+        <ctl name="HPHL Volume" value="20" />
+        <ctl name="HPHR Volume" value="20" />
         <ctl name="RX1 Digital Volume" value="83" />
         <ctl name="RX2 Digital Volume" value="83" />
 
     <path name="headphones">
         <ctl name="COMP1 Switch" value="0" />
         <ctl name="COMP2 Switch" value="0" />
-        <ctl name="HPHL Volume" value="17" />
-        <ctl name="HPHR Volume" value="17" />
+        <ctl name="HPHL Volume" value="20" />
+        <ctl name="HPHR Volume" value="20" />
         <ctl name="RX1 Digital Volume" value="83" />
         <ctl name="RX2 Digital Volume" value="83" />
     </path>
@@ -28,8 +28,8 @@
     <path name="headphones-44.1">
         <ctl name="COMP1 Switch" value="0" />
         <ctl name="COMP2 Switch" value="0" />
-        <ctl name="HPHL Volume" value="17" />
-        <ctl name="HPHR Volume" value="17" />
+        <ctl name="HPHL Volume" value="20" />
+        <ctl name="HPHR Volume" value="20" />
         <ctl name="RX1 Digital Volume" value="83" />
         <ctl name="RX2 Digital Volume" value="83" />
     </path>
