@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_beryllium.mk
+    $(LOCAL_DIR)/baikalos_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_beryllium-user \
-    aicp_beryllium-userdebug \
-    aicp_beryllium-eng
+    baikalos_beryllium-user \
+    baikalos_beryllium-userdebug \
+    baikalos_beryllium-eng
