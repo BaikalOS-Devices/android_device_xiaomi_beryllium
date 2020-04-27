@@ -6,6 +6,8 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
+TARGET_INCLUDE_WIFI_EXT := true
+
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/baikalos/config/common_full_phone.mk)
 
@@ -22,10 +24,13 @@ PRODUCT_MANUFACTURER := Xiaomi
 #    PRIVATE_BUILD_DESC="beryllium-user 10 QKQ1.190828.002 V11.0.6.0.QEJMIXM release-keys" \
 #    PRODUCT_NAME="beryllium"
 
-BUILD_FINGERPRINT := "Xiaomi/beryllium/beryllium:10/QKQ1.190828.002/V11.0.6.0.QEJMIXM:user/release-keys"
+#BUILD_FINGERPRINT := "Xiaomi/beryllium/beryllium:10/QKQ1.190828.002/V11.0.6.0.QEJMIXM:user/release-keys"
+#BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys"
+
+#PRIVATE_BUILD_DESC="beryllium-user 10 QKQ1.190828.002 V11.0.6.0.QEJMIXM release-keys" \
+
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="beryllium-user 10 QKQ1.190828.002 V11.0.6.0.QEJMIXM release-keys" \
     PRODUCT_NAME="beryllium" \
     TARGET_DEVICE="beryllium"
 
