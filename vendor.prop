@@ -1,6 +1,5 @@
 # Display postprocessing
 persist.ppd.fde.config=0
-vendor.display.enable_default_color_mode=1
 
 # Fingerprint
 ro.hardware.fp.fpc=true
@@ -8,3 +7,27 @@ ro.hardware.fp.goodix=true
 
 # FM
 vendor.hw.fm.init=0
+
+# Disable backlight notify to displayfeature
+ro.xiaomi.bl.notify=0
+
+# Disable inline rotator
+sdm.debug.disable_inline_rotator=1
+sdm.debug.disable_inline_rotator_secure=1
+
+#support night mode 2.0
+ro.eyecare.brightness.threshold=-1
+ro.eyecare.brightness.level=8
+ro.hist.brightness.threshold=7
+
+#Property to enable display default color mode by QC
+vendor.display.enable_default_color_mode=1
+
+#support unlimited color temperature adjust
+ro.colorpick_adjust=true
+
+# White Point Calibration
+ro.whitepoint_calibration_enable=false
+
+#Property for display feature histogram
+ro.displayfeature.histogram.enable=true
