@@ -48,16 +48,19 @@ void property_override(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
+/*
 void property_override_dual(char const system_prop[], char const vendor_prop[],
     char const value[])
 {
     property_override(system_prop, value);
     property_override(vendor_prop, value);
 }
+*/
 
 void vendor_load_properties()
 {
     // fingerprint
+    
     property_override("ro.build.description", "beryllium-user 10 QKQ1.190828.002 V11.0.6.0.QEJMIXM release-keys");
 
     property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
@@ -65,4 +68,6 @@ void vendor_load_properties()
     property_override("ro.system.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
     property_override("ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
     property_override("ro.odm.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
+    property_override("sys.oem_unlock_allowed", "0");
+    
 }
