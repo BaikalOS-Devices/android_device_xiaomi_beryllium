@@ -4,10 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+#PRODUCT_PROPERTY_OVERRIDES := ro.apex.updatable=false
+#PRODUCT_PACKAGES := com.android.apex.cts.shim.v1_prebuilt
+#TARGET_FLATTEN_APEX := true
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/beryllium/beryllium-vendor.mk)
@@ -17,10 +23,10 @@ TARGET_SCREEN_HEIGHT := 2246
 TARGET_SCREEN_WIDTH := 1080
 
 # FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
+#PRODUCT_PACKAGES += \
+#    FM2 \
+#    libqcomfm_jni \
+#    qcom.fmradio
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
