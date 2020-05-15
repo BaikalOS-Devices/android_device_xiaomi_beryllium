@@ -57,17 +57,22 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 }
 */
 
+//#define VENDOR_FP "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys"
+#define VENDOR_FP "Xiaomi/beryllium/beryllium:10/QKQ1.190828.002/V11.0.6.0.QEJMIXM:user/release-keys"
+#define VENDOR_SP "2020-02-01"
+#define VENDOR_DESC "beryllium-user 10 QKQ1.190828.002 V11.0.6.0.QEJMIXM release-keys"
+
 void vendor_load_properties()
 {
     // fingerprint
-    
-    property_override("ro.build.description", "beryllium-user 10 QKQ1.190828.002 V11.0.6.0.QEJMIXM release-keys");
-
-    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
-    property_override("ro.bootimage.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
-    property_override("ro.system.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
-    property_override("ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
-    property_override("ro.odm.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
+    /*
+    property_override("ro.build.description", VENDOR_DESC);
+    property_override("ro.build.fingerprint", VENDOR_FP);
+    property_override("ro.bootimage.build.fingerprint", VENDOR_FP);
+    property_override("ro.system.build.fingerprint", VENDOR_FP);
+    property_override("ro.vendor.build.fingerprint", VENDOR_FP);
+    property_override("ro.odm.build.fingerprint", VENDOR_FP);
+    property_override("ro.build.version.security_patch", VENDOR_SP);
+    */
     property_override("sys.oem_unlock_allowed", "0");
-    
 }
