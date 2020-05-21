@@ -26,18 +26,25 @@
     <bool name="doze_display_state_supported">false</bool>
 
     <!-- The CPU temperature sensor path, defaults to empty -->
-    <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="config_cpuTempSensor" translatable="false">/sys/devices/virtual/thermal/thermal_zone10/temp</string>
 
     <!-- The CPU temperature sensor path, defaults to empty -->
-    <string name="config_cpuTempSensorPrefix" translatable="false">/sys/class/thermal/thermal_zone</string>
+    <string name="config_cpuTempSensorPrefix" translatable="false">/sys/devices/virtual/thermal/thermal_zone</string>
 
     <!-- The CPU temperature sensor path, defaults to empty -->
     <string name="config_cpuTempSensorSuffix" translatable="false">/temp</string>
 
     <!-- The CPU temperature sensor path, defaults to empty -->
-    <string name="config_cpuTempSensorNumber" translatable="false">0,1,2,3,4,5,6,7</string>
+    <string name="config_cpuTempSensorNumber" translatable="false">1,2,3,4,7,8,9,10</string>
 
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
+
+    <!-- The SYS temperature sensor path, defaults to empty -->
+    <string name="config_sysTempSensor" translatable="false">/sys/devices/virtual/thermal/thermal_zone65/temp</string>
+
+    <!-- The BAT temperature sensor path, defaults to empty -->
+    <string name="config_batTempSensor" translatable="false">/sys/devices/virtual/thermal/thermal_zone73/temp</string>
+
     
 </resources>
