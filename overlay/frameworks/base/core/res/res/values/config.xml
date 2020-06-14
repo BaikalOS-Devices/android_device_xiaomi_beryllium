@@ -210,9 +210,59 @@
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M -270,0 L -270,86 L 270,86 L 270,0 Z</string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">86.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+    <!-- dimen name="status_bar_height">48dp</dimen -->
+    <dimen name="status_bar_height_portrait">90px</dimen>
+    <!-- dimen name="status_bar_height_landscape">48dp</dimen -->
     <dimen name="rounded_corner_radius_top">104px</dimen>
+
+    <!-- Height of notification icons in the status bar -->
+    <dimen name="status_bar_icon_size">16dip</dimen>
+
+    <!-- Default horizontal drawable padding for status bar icons. -->
+    <!-- dimen name="status_bar_horizontal_padding">1dp</dimen -->
+
+    <!-- Height of the battery icon in the status bar. -->
+    <!-- dimen name="status_bar_battery_icon_height">13.0dp</dimen -->
+
+    <!-- Width of the battery icon in the status bar. The battery drawable assumes a 12x20 canvas,
+    so the width of the icon should be 13.0dp * (12.0 / 20.0) -->
+    <!-- dimen name="status_bar_battery_icon_width">10.0dp</dimen -->
+
+    <!-- The font size for the clock in the status bar. -->
+    <!-- dimen name="status_bar_clock_size">14sp</dimen -->
+
+    <!-- The font size for the clock in the status bar. -->
+    <dimen name="status_bar_clock_size_dlsb">10sp</dimen>
+
+    <!-- The starting padding for the clock in the status bar. -->
+    <!-- dimen name="status_bar_clock_starting_padding">0dp</dimen -->
+
+    <!-- The end padding for the clock in the status bar. -->
+    <!-- dimen name="status_bar_clock_end_padding">0dp</dimen -->
+
+    <!-- Starting padding for a left-aligned status bar clock -->
+    <!-- dimen name="status_bar_left_clock_starting_padding">0dp</dimen -->
+
+    <!-- End padding for left-aligned status bar clock -->
+    <!-- dimen name="status_bar_left_clock_end_padding">0dp</dimen -->
+
+    <!-- Spacing after the wifi signals that is present if there are any icons following it. -->
+    <dimen name="status_bar_wifi_signal_spacer_width">1dp</dimen>
+
+    <!-- Size of the view displaying the wifi signal icon in the status bar. -->
+    <dimen name="status_bar_wifi_signal_size">16dip</dimen>
+
+    <!-- Spacing before the airplane mode icon if there are any icons preceding it. -->
+    <dimen name="status_bar_airplane_spacer_width">1dp</dimen>
+
+    <!-- The amount to scale each of the status bar icons by. A value of 1 means no scaling. -->
+    <!-- item name="status_bar_icon_scale_factor" format="float" type="dimen">0.75</item -->
+
+    <!-- End margin for the RSSI status icon of a device connected via bluetooth. -->
+    <!-- dimen name="status_bar_connected_device_signal_margin_end">11dp</dimen -->
+
+    <!-- The size of a bluetooth indicator icon that displays next to the RSSI status icon. -->
+    <!-- dimen name="status_bar_connected_device_bt_indicator_size">10dp</dimen -->
 
     <!-- Default state for LiveDisplay -->
     <bool name="config_liveDisplayAvailable">true</bool>
