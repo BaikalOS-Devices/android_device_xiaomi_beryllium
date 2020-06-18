@@ -222,10 +222,13 @@
     <!-- dimen name="status_bar_system_icon_size">15dp</dimen -->
     <!-- dimen name="status_bar_system_icon_size">13dp</dimen -->
     <!-- dimen name="status_bar_system_icon_intrinsic_size">17dp</dimen -->
-    <!-- dimen name="status_bar_system_icon_intrinsic_size">14dp</dimen -->
+    <dimen name="status_bar_system_icon_intrinsic_size">14dp</dimen>
 
     <!-- size at which Notification icons will be drawn in the status bar -->
-    <dimen name="status_bar_icon_size">15dip</dimen>
+    <!-- dimen name="status_bar_icon_size">15dip</dimen -->
+
+    <dimen name="net_traffic_txt_img_padding">0dp</dimen>
+    <dimen name="net_traffic_multi_text_size">7dp</dimen>
 
     <!-- gap on either side of status bar notification icons -->
     <dimen name="status_bar_icon_padding">0dp</dimen>
@@ -242,13 +245,13 @@
     <!-- The font size for the clock in the status bar. -->
     <dimen name="status_bar_clock_size_dlsb">10sp</dimen>
 
-    <dimen name="signal_icon_size">13dp</dimen>
+    <dimen name="signal_icon_size">10dp</dimen>
 
     <!-- Size of the view displaying the wifi signal icon in the status bar. -->
-    <dimen name="status_bar_wifi_signal_size">13dp</dimen>
+    <dimen name="status_bar_wifi_signal_size">10dp</dimen>
 
     <!-- The amount to scale each of the status bar icons by. A value of 1 means no scaling. -->
-    <item name="status_bar_icon_scale_factor" format="float" type="dimen">0.75</item>
+    <item name="status_bar_icon_scale_factor" format="float" type="dimen">0.5</item>
 
     <!-- Default state for LiveDisplay -->
     <bool name="config_liveDisplayAvailable">true</bool>
