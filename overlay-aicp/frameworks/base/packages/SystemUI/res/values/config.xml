@@ -44,7 +44,7 @@
     <string name="config_sysTempSensor" translatable="false">/sys/devices/virtual/thermal/thermal_zone65/temp</string>
 
     <!-- The BAT temperature sensor path, defaults to empty -->
-    <string name="config_batTempSensor" translatable="false">/sys/devices/virtual/thermal/thermal_zone73/temp</string>
+    <string name="config_batTempSensor" translatable="false">/sys/devices/virtual/thermal/thermal_zone71/temp</string>
 
     
 </resources>
