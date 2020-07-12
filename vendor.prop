@@ -31,3 +31,6 @@ ro.whitepoint_calibration_enable=false
 
 #Property for display feature histogram
 ro.displayfeature.histogram.enable=true
+
+#BaikalOS
+persist.baikalos.nvt_fw=0
