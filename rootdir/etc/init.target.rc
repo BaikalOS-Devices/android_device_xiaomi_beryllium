@@ -38,8 +38,8 @@ service remosaic_daemon /vendor/bin/remosaic_daemon
 
 
 on property:persist.baikalos.nvt_fw=1
-    write /sys/module/nt36xxx/parameters/fw_variant 1
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0062/fw_variant 1
 
 on property:persist.baikalos.nvt_fw=0
-    write /sys/module/nt36xxx/parameters/fw_variant 0
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0062/fw_variant 0
 
