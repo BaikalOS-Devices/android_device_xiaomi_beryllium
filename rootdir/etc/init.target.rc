@@ -43,3 +43,8 @@ on property:persist.baikalos.nvt_fw=1
 on property:persist.baikalos.nvt_fw=0
     write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0062/fw_variant 0
 
+on property:persist.baikalos.nvt_esd=1
+    write /sys/module/nt36xxx/parameters/esd_check_enable 1
+
+on property:persist.baikalos.nvt_esd=0
+    write /sys/module/nt36xxx/parameters/esd_check_enable 0
