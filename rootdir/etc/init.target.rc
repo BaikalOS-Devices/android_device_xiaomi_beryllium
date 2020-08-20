@@ -48,3 +48,29 @@ on property:persist.baikalos.nvt_esd=1
 
 on property:persist.baikalos.nvt_esd=0
     write /sys/module/nt36xxx/parameters/esd_check_enable 0
+
+on property:persist.baikalos.ftd_esd=0
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0038/fts_esd_mode 0
+
+on property:persist.baikalos.ftd_esd=1
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0038/fts_esd_mode 1
+
+on property:persist.baikalos.fts_glove=0
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0038/fts_glove_mode 0
+
+on property:persist.baikalos.fts_glove=1
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0038/fts_glove_mode 1
+
+on property:persist.baikalos.fts_cover=0
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0038/fts_cover_mode 0
+
+on property:persist.baikalos.fts_cover=1
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0038/fts_cover_mode 1
+
+on property:persist.baikalos.fts_charger=0
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0038/fts_charger_mode 0
+
+on property:persist.baikalos.fts_charger=1
+    write /sys/devices/platform/soc/a98000.i2c/i2c-3/3-0038/fts_charger_mode 1
+
+
