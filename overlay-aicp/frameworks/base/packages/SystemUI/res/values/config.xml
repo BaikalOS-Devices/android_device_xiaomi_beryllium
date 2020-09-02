@@ -52,5 +52,6 @@
     <!-- The BAT temperature sensor path, defaults to empty -->
     <string name="config_batTempSensor" translatable="false">/sys/devices/virtual/thermal/thermal_zone71/temp</string>
 
-    
+    <string name="config_gpuFreqSensor" translatable="false">/sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/clock_mhz</string>
+
 </resources>
