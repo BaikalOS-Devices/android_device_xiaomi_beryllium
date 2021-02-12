@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2018-2020 The baikalosOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -24,6 +24,9 @@ BOARD_HAVE_QCOM_FM := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
+
+# Camera
+TARGET_FACE_UNLOCK_CAMERA_ID := 5
 
 # Kernel
 TARGET_KERNEL_CONFIG := beryllium_defconfig

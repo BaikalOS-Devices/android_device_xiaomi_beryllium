@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2018-2020 The baikalosOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,6 +12,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/beryllium/beryllium-vendor.mk)
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2246
 TARGET_SCREEN_WIDTH := 1080
+TARGET_USE_MOTO_DOLBY := true
 
 # FM
 PRODUCT_PACKAGES += \
@@ -57,7 +58,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845 \
+    vendor.xiaomi.hardware.fingerprintextension@1.0
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -82,6 +84,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
-# PocketMode
-PRODUCT_PACKAGES += \
-    XiaomiPocketMode
