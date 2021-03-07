@@ -219,4 +219,28 @@
 
     <bool name="config_physicalDisplayCutout">true</bool>    
 
+    <!-- Use default display mode -->
+    <integer name="config_defaultLiveDisplayMode">38</integer>
+
+    <!-- Display mode remapping table.
+         If the mode names returned by the backend do not match
+         the predefined and translated strings in the Settings
+         app, they can be remapped here. The format is
+         "oldname:newname", one per entry. -->
+    <string-array name="config_displayModeMappings">
+        <item>38oled_native:Standard</item><!-- 38 -->
+        <item>OLED_native:Standard</item><!-- 38 -->
+        <item>00default:Dynamic</item> <!-- 0 -->
+        <item>36srgb_native:Cinema</item> <!-- 37 -->
+        <item>sRGB_native:Cinema</item> <!-- 37 -->
+        <item>srgb_d65:Photography</item> <!-- 3 -->
+        <item>sRGB_d65:Photography</item> <!-- 3 -->
+        <item>HDR_P3_standard:HDR</item>  <!-- 39 -->
+        <item>native:Basic</item> <!-- 40 -->
+        <item>HDR_P3_custom:HDR 2</item> <!-- 40 -->
+    </string-array>
+
+    <!-- Should we filter any display modes which are unampped? -->
+    <bool name="config_filterDisplayModes">true</bool>
+
 </resources>
